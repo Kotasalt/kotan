@@ -1,5 +1,6 @@
 *{
 }
+
 header {
     height: 80px;
     position: absolute;
@@ -411,7 +412,6 @@ footer p {
 @media(max-width:1000px){
   .project{
     width:50%;
-
   }
   .content{
     width:50%;
@@ -422,10 +422,9 @@ footer p {
 }
 @media(max-width:670px){
   .project{
-    width:100%{
+    width:100%;
   }
   .content{
     width:100%;
   }
-  .
 }
