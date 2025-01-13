@@ -1,114 +1,460 @@
-/* リセット */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+}
+header{
+ height:80px;
+
+  position:absolute;
+
+  width:100%;
+
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+.header-logo{
+height:50px;
+
+}
+.header-left{
+  float:left;
+}
+.header-left h1{
+  font-size:30px;
+  margin-left: 30px;
+color:white;
+padding-top:5px;
+}
+.header-right{
+  float:right;
+  margin-right:15px;
+  text-align:right;
+}
+.header-right a{
+font-size:20px;
+padding:0 15px;
+margin-top: 36px;
+margin-right:40px;
+color:white;
+text-align:right;
+float:right;
+font-family:sans-serif;
+font-weight: bold;
+}
+.header-right a:hover{
+  color:rgba(255, 255, 0, 1);
+}
+.top-wrapper{
+background-image:url(https://kotasalt.web.fc2.com/IMG_E2345.JPG
+
+
+ );
+background-size:cover;
+height:640px;
+width:100%;
+}
+.top-wrapper p{
+  color:#808000;
+  font-family:serif;
+  text-align:right;
+  padding-right: 21px;
+}
+.top-wrapper h1{
+  color:white;
+  text-align:left;
+  float:right;
+  font-size:35px;
+  margin-left:20px;
+}
+.top-wrapper-logo{
+  padding-top:340px;
+  padding-right:80px;
 }
 
-header {
-  background-color: #333;
-  color: white;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
+.top-wrapper-select{
+  float:left;
 }
+.what-wrapper{
+  padding-top:30px;
+  margin-top:30px;
+width:100%;
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
 }
-
-.header-left h1 {
-  font-size: 24px;
+.contener{
+margin:0 auto;
+padding:0 100px;
+max-width:1150px;
+width:100%;
 }
+.section-title{
+  height:100px;
+position:relative;
+}
+.title-left{
+  border-right: #696969 solid 2px;
+}
+.title-left h2{
+  font-size:30px;
+float:left;
+font-size:26px;
+}
+.title-left p{
+  color:#808000;
+position:absolute;
+top:52px;
+font-size:12px;
+font-family:inherit;
 
-.header-right a {
-  color: white;
-  text-decoration: none;
-  margin-left: 15px;
-  font-size: 16px;
+}
+.title-right{
+  position:absolute;
+  float:right;
+  top:33px;
+  padding-left: 220px;
+
+}
+.what-contents{
+  text-align:center;
+  height:1000px;
+
+}
+.project-top{
+  height:500px;
+}
+.project-bottom{
+  height:500px;
+}
+.project{
+  float:left;
+  width:33%;
+  text-align:left;
+  background-color: white;
+}
+.project:hover{
+opacity:0.7;
+}
+.plus{
+  height:120px;
+text-align: center;
+padding-top: 60px;
+background-color:rgba(255,255,0,0.5);
+border-bottom:none;
+}
+.plus:hover{
+  background-color:rgba(255,255,0,1)
+}
+.plus a{
+  color:black;
+}
+.project img{
+  display:block;
+  width:350px;
+  height:250px;
+}
+.person{
+  font-size:13px;
+  font-weight:bold;
+  width:57px;
+  padding:2px 8px;
+  background-color:black;
+  color:white;
+  border-radius: 20px;
+  margin-right: 8px;
+  margin-left: 10px;
+
+}
+.project-logo{
+  border:#808000 solid 2px;
+  border-radius: 20px;
+  color:#808000;
+
+
+  font-size:13px;
+  padding:0 8px;
+
+  width:61px;
+  display:block;
+
+}
+.project-head{
+
+}
+.project-head p{
+  float:left;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
-
-.header-right a:hover {
-  color: #ffd700;
+.project h3{
+  display:inline-block;
+  font-size:21px;
+color:black;
 }
+.date{
+  color:#808000;
+  font-size:13px;
+  text-align: left;
+}
+.how-wrapper{
+  padding-top:30px;
+  margin-top:30px;
 
-.top-wrapper {
-  background-image: url('https://kotasalt.web.fc2.com/IMG_E2345.JPG');
-  background-size: cover;
-  background-position: center;
-  height: 640px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  color: white;
-  padding: 20px;
-  margin-top: 80px; /* ヘッダー高さ分の余白 */
+
+}
+.content img{
+  width:360px;
+  height:250px;
+}
+.content{
+  float:left;
+  width:360px;
+  height:600px;
+
 }
 
-.top-wrapper-logo p {
-  font-size: 20px;
-  margin-bottom: 20px;
+.how-contents{
+  text-align:center;
+  height:1100px;
 }
+.content-text{
 
-.top-wrapper-logo h1 {
-  font-size: 36px;
-  line-height: 1.4;
+padding:0 30px;
 }
-
-.top-wrapper-logo span {
-  font-size: 28px;
-  font-weight: 300;
+.column{
+  border:#808000 solid 2px;
+  color:#808000;
+  font-size:13px;
+  border-radius: 20px;
+  padding:0 8px;
+  display:block;
+  width:56px;
+  float:left;
 }
+.section-title{
+  padding-bottom:10px;
+}
+.feeling{
+  float:left;
+  font-size: 12px;
+  font-weight: bold;
+ padding-top:5px;
+ padding-right:7px;
+ padding-left: 20px;
+ border-right:black solid 1px;
+ color:black;
+}
+.place{
+  float:left;
+  font-size:12px;
+  font-weight:bold;
+  padding-top:5px;
+  padding-left:7px;
+  color:black;
+}
+.content-letter{
+  display:inline-block;
+  text-align: left;
+  color:black;
+}
+.more{
+  text-align: center;
+}
+.more a{
+display:inline-block;
+padding:23px 100px;
+border:black solid 1px;
+margin-top:10px;
+margin-bottom:30px;
+color:black;
+}
+.more a:hover{
+  background-color:rgba(255,255,0,1);
+}
+.content:hover{
+  background-color: rgba(255,255,0);
+}
+.event-wrapper{
+  padding-top:30px;
+  margin-top:30px;
 
-/* レスポンシブ対応 */
-@media (max-width: 768px) {
-  .header-right a {
-    font-size: 14px;
-    margin-left: 10px;
+}
+.event-top{
+  position:relative;
+}
+.event-top img{
+  height:500px;
+  width:100%;
+}
+.event-box{
+  color:white;
+  background-color: rgba(17,35,61,1);
+  width:530px;
+  height:400px;
+  position:absolute;
+  top:130px;
+  margin-left:550px;
+}
+.event-left img{
+  width:280px;
+  height:200px;
+}
+.event-text{
+  margin:0 auto;
+  width:400px;
+  height:300px;
+  margin-top:50px;
+  position:relative;
+}
+.type{
+  border:#808000 solid 2px;
+  border-radius: 20px;
+  font-size:13px;
+  width:36px;
+  color:#808000;
+padding:0 8px;
+float:left;
+font-weight: bold;
+}
+.event-date{
+  color:#808000;
+  float:left;
+  padding-left: 20px;
+}
+.event-text h1{
+  display:block;
+  position:absolute;
+  top:80px;
+  text-align: left;
+}
+.events{
+
+  height:500px;
+  margin-top: 100px;
+  border-top: black solid 1px;
+}
+.event-left{
+  float:left;
+}
+.event-right{
+  float:left;
+  padding:15px 30px;
+}
+.event-right h2{
+  color:black;
+}
+.event{
+  width:50%;
+  float:left;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-bottom: black solid 1px;
+
+}
+.where-contents{
+height:600px;
+}
+.where-image{
+  float:left;
+  width:850px;
+  height:600px;
+}
+.where-image img{
+  width:850px;
+  height:600px;
+}
+.where-left{
+  float:left;
+}
+.where-right{
+padding-right:245px;
+  float:right;
+  text-align: left;
+}
+.access{
+  color:#808000;
+}
+.where-type a{
+  color:black;
+  font-weight: bold;
+  font-size:22px;
+}
+.where-type li{
+  padding-bottom:20px;
+}
+.link-wrapper{
+  background-color:rgba(17,35,61,1);
+  color:white;
+  height:500px;
+}
+.link-wrapper a{
+  color:white;
+  font-weight: bold;
+}
+.link-contents{
+  padding:100px 100px;
+}
+.link-top{
+
+}
+.link-bottom{
+
+}
+.who{
+  float:left;
+}
+.where{
+  float:left;
+}
+.what{
+  float:left;
+}
+.how{
+  float:left;
+}
+.information{
+  float:left;
+}
+.sns{
+  float:left
+}
+.top{
+  float:left;
+  width:33%;
+  padding-bottom:100px;
+}
+.bottom{
+  float:left;
+  width:33%;
+}
+.link-wrapper li a{
+  font-size:14px;
+}
+footer{
+  height:400px;
+  background-color:#000113;
+  position:relative;
+}
+footer p{
+  position:absolute;
+  color:white;
+  top:300px;
+  padding-left: 1000px;
+  font-size:13px;
+}
+@media(max-width:1000px){
+  .project{
+    width:50%;
+
   }
-
-  .top-wrapper-logo h1 {
-    font-size: 28px;
+  .content{
+    width:50%;
   }
-
-  .top-wrapper-logo span {
-    font-size: 22px;
+  .event{
+    width:50%;
   }
 }
-
-@media (max-width: 480px) {
-  .header-left h1 {
-    font-size: 20px;
+@media(max-width:670px){
+  .project{
+    width:100%{
   }
-
-  .header-right a {
-    font-size: 12px;
-    margin-left: 8px;
+  .content{
+    width:100%;
   }
-
-  .top-wrapper-logo h1 {
-    font-size: 24px;
-  }
-
-  .top-wrapper-logo span {
-    font-size: 18px;
-  }
+  .
 }
