@@ -1,0 +1,114 @@
+/* リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-left h1 {
+  font-size: 24px;
+}
+
+.header-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header-right a:hover {
+  color: #ffd700;
+}
+
+.top-wrapper {
+  background-image: url('https://kotasalt.web.fc2.com/IMG_E2345.JPG');
+  background-size: cover;
+  background-position: center;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin-top: 80px; /* ヘッダー高さ分の余白 */
+}
+
+.top-wrapper-logo p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.top-wrapper-logo h1 {
+  font-size: 36px;
+  line-height: 1.4;
+}
+
+.top-wrapper-logo span {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .header-right a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .top-wrapper-logo h1 {
+    font-size: 28px;
+  }
+
+  .top-wrapper-logo span {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-left h1 {
+    font-size: 20px;
+  }
+
+  .header-right a {
+    font-size: 12px;
+    margin-left: 8px;
+  }
+
+  .top-wrapper-logo h1 {
+    font-size: 24px;
+  }
+
+  .top-wrapper-logo span {
+    font-size: 18px;
+  }
+}
