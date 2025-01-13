@@ -411,50 +411,21 @@ footer p {
 @media(max-width:1000px){
   .project{
     width:50%;
-    display: flex;
-    justify-content: center;
+
   }
   .content{
     width:50%;
-    display: flex;
-    justify-content: center;
   }
   .event{
     width:50%;
-    display: flex;
-    justify-content: center;
-  }
-  .header-left, .header-right {
-    float: none;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .top-wrapper h1 {
-    font-size: 28px; /* フォントサイズを小さくする */
-  }
-  .top-wrapper-logo {
-    padding-top: 200px; /* ロゴの上部マージンを小さくする */
   }
 }
 @media(max-width:670px){
   .project{
-    width:100%;
+    width:100%{
   }
   .content{
     width:100%;
   }
-  .event{
-    width:100%;
-  }
-  .header-left, .header-right {
-    flex-direction: column;
-    align-items: center;
-  }
-  .top-wrapper h1 {
-    font-size: 24px; /* フォントサイズをさらに小さくする */
-  }
-  .top-wrapper-logo {
-    padding-top: 150px; /* ロゴの上部マージンをさらに小さくする */
-  }
+  .
 }
